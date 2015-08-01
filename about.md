@@ -3,11 +3,11 @@ layout: page
 title: About
 ---
 
-This group is for anyone interested in programming with the focus of learning the fundamentals and developing the necessary skills to become competent enough. All coders from different programming languages and different skill levels are welcome.
+This group is for anyone interested in programming with the focus of learning the fundamentals and developing the necessary skills to become competent enough. All coders from different programming languages and different skill levels are welcomed.
 
-In Summer 2014, a group of people began to show up to the weekly sessions to learn and share knowledge. Few sessions later, some of us noticed the potential of this group and decided to devote our time and efforts to set a friendly environment for both existing and joining members.
+In Summer 2014, some people began to show up to the weekly sessions to learn and share knowledge. Few sessions later, some of us noticed the potential of this group and decided to devote our time and efforts to set a friendly environment for both existing and future members.
 
-We have covered topics such as web development, regular expressions as well as data mining. This summer we are setting a new agenda for our members and are coming back stronger than ever.
+Later onn, we have covered topics such as web development, regular expressions as well as data mining. This summer we are setting a new agenda for our members and are coming back stronger than ever.
 
 You will be hearing from us soon!
 

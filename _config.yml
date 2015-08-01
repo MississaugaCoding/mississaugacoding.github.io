@@ -20,7 +20,8 @@ author:
 
 
 github:
-  repo:				https://github.com/MississaugaCoding
+  url:				https://github.com/MississaugaCoding
+
 
 # Custom vars
 version:             1.0.0
