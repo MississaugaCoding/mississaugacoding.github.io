@@ -61,7 +61,8 @@ Note:
     </head>
 
     <body>
-
+ 
+        <!-- some comment --> 
         <p>Some text on my web page</p>
 
     </body>
@@ -73,6 +74,7 @@ Note:
 
   - HTML is *not* case-sensitive; current convention is all lower-case
   - white space (blank lines, indentation) *not* required, but recommended for better readability
+  - ditto for comments
 
 
 ###A bit more about CSS
