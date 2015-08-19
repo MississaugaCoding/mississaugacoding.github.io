@@ -5,7 +5,9 @@ comments: true
 publish: true
 ---
 
-This post will include notes from intro sessions, as well as some resource links. Members will also be able to post their questions or comments.
+This post includes notes from the introductory sessions, as well as some resource links. 
+
+Members will also be able to post their questions or comments.
 
 ###What is HTML?
 - Hyper Text Mark-up Language
