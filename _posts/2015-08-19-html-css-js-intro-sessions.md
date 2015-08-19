@@ -37,7 +37,7 @@ This post will include notes from intro sessions, as well as some resource links
 ###A bit more about HTML 
 - generic tag syntax:
 {% highlight html %}
-<tagname attribute1="attribute1-value" attribute2="attribute2-value" ... > text </tagname>
+<tagname attribute1="attribute1-value" ... > text </tagname>
 {% endhighlight %}
 
 Note:
