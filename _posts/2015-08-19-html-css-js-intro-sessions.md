@@ -76,7 +76,7 @@ Note:
 
   - HTML is *not* case-sensitive; current convention is all lower-case
   - white space (blank lines, indentation) *not* required, but recommended for better readability
-  - ditto for comments
+  - ditto for comments; be aware that doing a view-source displays comments to all
 
 
 ###A bit more about CSS
@@ -88,6 +88,13 @@ selector {
 }
 {% endhighlight %}
 
+So to style our paragraph in the HTML above, for example to set the text colour:
+
+{% highlight css %}
+p {
+    color: purple;
+}
+{% endhighlight %}
 
 ####Some Resource Links
 - [W3Schools HTML](http://www.w3schools.com/html/)
