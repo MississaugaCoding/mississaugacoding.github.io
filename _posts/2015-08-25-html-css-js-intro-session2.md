@@ -2,7 +2,7 @@
 layout: post
 title: HTML/CSS/JS - Intro Session 2
 comments: true
-publish: true
+publish: false
 ---
 
 This week we will continue covering the basic concepts of HTML, CSS and JavaScript.
