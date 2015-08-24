@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML/CSS/JS - Intro Sessions
+title: HTML/CSS/JS - Intro Session 1
 comments: true
 publish: true
 ---
@@ -44,7 +44,7 @@ Members will also be able to post their questions or comments.
 
 Note:
 
-  - angle brackets or chevrons
+  - angle brackets 
   - there is always a tagname
   - attributes, if any, vary according to tags
   - the text may consist of other tags, i.e. nested HTML
@@ -75,8 +75,9 @@ Note:
 Note:
 
   - HTML is *not* case-sensitive; current convention is all lower-case
+      - exception some attribute values, e.g. id's, classes (more about these later)
   - white space (blank lines, indentation) *not* required, but recommended for better readability
-  - ditto for comments; be aware that doing a view-source displays comments to all
+  - ditto for comments; be aware of "View source" 
 
 
 ###A bit more about CSS
@@ -88,7 +89,15 @@ selector {
 }
 {% endhighlight %}
 
-So to style our paragraph in the HTML above, for example to set the text colour:
+Note:
+
+  - selector is required; identifies specific element(s)
+    - allows us to zero in on which elements should that styling be applied to
+    - can be tag name, e.g. p
+    - can be element id or class (more about these soon)
+  - property-value pairs vary based on element being styled
+   
+To style the paragraph in the HTML above, for example to set the text colour:
 
 {% highlight css %}
 p {
