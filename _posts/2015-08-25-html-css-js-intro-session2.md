@@ -2,14 +2,14 @@
 layout: post
 title: HTML/CSS/JS - Intro Session 2
 comments: true
-publish: false
----
+publish: true
+--- 
 
 This week we will continue covering the basic concepts of HTML, CSS and JavaScript.
 
 We will introduce new HTML tags, CSS properties and touch on some JavaScript as well.
 
-This is where we left our HTML and CSS files last week:
+This is where we left off our HTML and CSS files:
 
 ###index.html
 {% highlight html %}
@@ -85,9 +85,7 @@ The _id_ attribute lets us give a unique identifier to any HTML element on our w
 
 The _class_ attribute is very similar but for a group of HTML elements.
 
-The _id_ and _class_ attributes allow us to refer to a specific HTML element or element(s).
-
- - let us refer to our HTML elements in CSS and in JavaScript.
+The _id_ and _class_ attributes are useful because they allow us to refer to specific HTML element or element(s) from our CSS and from our JavaScript.
  
 
 ###Let's introduce some JavaScript into the mix
@@ -113,8 +111,8 @@ alert('Name:' + empName + '  Ext:' + empExt);
 Note:
 
   - the word _var_
-  - variable assignment
-  - naming rules
+  - variable assignment 
+  - naming rules and conventions
   - case-sensitive
   - common simple types: numeric, string, boolean
 
@@ -123,10 +121,12 @@ Note:
 _alert()_ is a JavaScript function.
 
 Another built-in function is _getElementById()_ 
-- fetches an HTML element from our page so we can do something to it, e.g. style it dynamicallyAnother
+
+- fetches an HTML element from our page so we can do something to it, e.g. to style it dynamically
 
 {% highlight javascript %}
 var myElem = document.getElementById('mytext');
+myElem.style.fontSize = '50px';
 {% endhighlight %}
 
 Note:
@@ -165,11 +165,7 @@ The above two lines of JavaScript code
   - get the button element from the HTML document and save it to a variable
   - tells the browser to execute myFunction when the button is clicked
 
-In JavaScript we can also dynamically, on the fly, apply styling to an element, for example:
 
-{% highlight javascript %}
-document.getElementById('mytext').style.fontSize = '50px';
-{% endhighlight %}
 
 As an exercise, add to our example web page the facility to 
 
@@ -177,6 +173,7 @@ As an exercise, add to our example web page the facility to
   - set the text of our paragraph to be displyed in that colour.
 
 
-####Additional Resource Links
+
+###Additional Resource Links
 - [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
 - [Mozilla JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
