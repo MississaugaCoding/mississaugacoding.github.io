@@ -11,7 +11,7 @@ We will introduce new HTML tags, CSS properties and touch on some JavaScript as 
 
 This is where we left our HTML and CSS files last week:
 
-**index.html**
+###index.html
 {% highlight html %}
 <!doctype html>
 <html>
@@ -19,6 +19,7 @@ This is where we left our HTML and CSS files last week:
     <head>
     
         <title>My Web Page</title>
+        <link rel="stylesheet" href="style.css" /> 
         
     </head>
 
@@ -32,10 +33,10 @@ This is where we left our HTML and CSS files last week:
 </html>
 {% endhighlight %}
 
-**style.css**
+###style.css
 {% highlight css %}
 p {
-    color: purple; /* or whichever colour you chose */
+    color: blue; /* or whichever colour you chose */
 }
 {% endhighlight %}
 
@@ -70,32 +71,59 @@ Buttons are another common element on web pages.
 <button>Click Me Now</button>
 {% endhighlight %}
 
-Two very important HTML attributes to know about, and use, are: id and class
+A very important HTML attribute to know about, and use, is _id_.
 
 {% highlight html %}
 <p  id="mytext" > Some text on my web page </p>
 {% endhighlight %}
 
-The 'id' attribute allows us to (optionally) give a unique identifier to any HTML element on our web page.
+{% highlight html %}
+<button id="myButton" >Click Me Now</button>
+{% endhighlight %}
 
-The 'class' attribute is very similar but for a group of HTML elements.
+The _id_ attribute lets us give a unique identifier to any HTML element on our web page.
 
-Both these attributes allow us to refer to a specific HTML element or element(s).
+The _class_ attribute is very similar but for a group of HTML elements.
 
-Why that is important will be made apparent in a few minutes, but first...
+The _id_ and _class_ attributes allow us to refer to a specific HTML element or element(s).
+
+ - let us refer to our HTML elements in CSS and in JavaScript.
+ 
 
 ###Let's introduce some JavaScript into the mix
 
-_Variables_
+As we did in the case of CSS, we need to let our HTML know about our JavaScript.
 
-A key concept in any programming langauge is the concept of variables. Here's how a variable is defined in JavaScript.
-
-{% highlight javascript %}
-var myVar = 'some value';
-alert(myVar);
+{% highlight html %}
+<script src="script.js"></script>
 {% endhighlight %}
 
-_Built-in functions_
+####Variables
+
+Here's how a variable is defined in JavaScript.
+
+{% highlight javascript %}
+var empName = 'Jane Doe';
+var empExt = 4279;
+alert(empName);
+alert(empExt);
+alert('Name:' + empName + '  Ext:' + empExt);
+{% endhighlight %}
+
+Note:
+
+  - the word _var_
+  - variable assignment
+  - naming rules
+  - case-sensitive
+  - common simple types: numeric, string, boolean
+
+####Built-in functions
+
+_alert()_ is a JavaScript function.
+
+Another built-in function is _getElementById()_ 
+- fetches an HTML element from our page so we can do something to it, e.g. style it dynamicallyAnother
 
 {% highlight javascript %}
 var myElem = document.getElementById('mytext');
@@ -103,13 +131,10 @@ var myElem = document.getElementById('mytext');
 
 Note:
 
-  - variable assignment
-  - naming rules
-  - alert() is a JS built-in function 
-  - dot notation as in document.
-  - getElementById() another built-in function
+  - dot notation as in _document._
+ 
 
-_Programmer-defined functions_
+####Programmer-defined functions
 
 {% highlight javascript %}
 function myFunction() {
@@ -126,3 +151,32 @@ The above defines a function, but to actually call it we need to add:
 myFunction();
 {% endhighlight %}
 
+Functions can be called either within the JavaScript code itself or via ....
+
+####Event Listeners
+
+{% highlight javascript %}
+var btn = document.getElementById('myButton');
+btn.addEventListener('click', myFunction);
+{% endhighlight %}
+
+The above two lines of JavaScript code
+
+  - get the button element from the HTML document and save it to a variable
+  - tells the browser to execute myFunction when the button is clicked
+
+In JavaScript we can also dynamically, on the fly, apply styling to an element, for example:
+
+{% highlight javascript %}
+document.getElementById('mytext').style.fontSize = '50px';
+{% endhighlight %}
+
+As an exercise, add to our example web page the facility to 
+
+  - choose a colour from a drop-down and 
+  - set the text of our paragraph to be displyed in that colour.
+
+
+####Additional Resource Links
+- [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
+- [Mozilla JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
