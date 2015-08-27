@@ -7,7 +7,7 @@ publish: true
 
 This week we will continue covering the basic concepts of HTML, CSS and JavaScript.
 
-We will introduce new HTML tags, CSS properties and touch on some JavaScript as well.
+We will introduce new HTML tags and CSS properties, before touching on some JavaScript as well.
 
 This is where we left off our HTML and CSS files:
 
@@ -71,109 +71,20 @@ Buttons are another common element on web pages.
 <button>Click Me Now</button>
 {% endhighlight %}
 
-A very important HTML attribute to know about, and use, is _id_.
+There are many, many more HTML element tags and CSS properties, each with their own attributes and settings respectively.
 
-{% highlight html %}
-<p  id="mytext" > Some text on my web page </p>
-{% endhighlight %}
+Some other, very commonly used HTML elements include:
 
-{% highlight html %}
-<button id="myButton" >Click Me Now</button>
-{% endhighlight %}
+  - _a_
+  - _ul_ , _li_
+  - _input_
+  - _div_
+  - _h1_ through _h6_
+  - _img_
+  - _table_
 
-The _id_ attribute lets us give a unique identifier to any HTML element on our web page.
-
-The _class_ attribute is very similar but for a group of HTML elements.
-
-The _id_ and _class_ attributes are useful because they allow us to refer to specific HTML element or element(s) from our CSS and from our JavaScript.
  
+These resource links are provided for your perusal:
 
-###Let's introduce some JavaScript into the mix
-
-As we did in the case of CSS, we need to let our HTML know about our JavaScript.
-
-{% highlight html %}
-<script src="script.js"></script>
-{% endhighlight %}
-
-####Variables
-
-Here's how a variable is defined in JavaScript.
-
-{% highlight javascript %}
-var empName = 'Jane Doe';
-var empExt = 4279;
-alert(empName);
-alert(empExt);
-alert('Name:' + empName + '  Ext:' + empExt);
-{% endhighlight %}
-
-Note:
-
-  - the word _var_
-  - variable assignment 
-  - naming rules and conventions
-  - case-sensitive
-  - common simple types: numeric, string, boolean
-
-####Built-in functions
-
-_alert()_ is a JavaScript function.
-
-Another built-in function is _getElementById()_ 
-
-- fetches an HTML element from our page so we can do something to it, e.g. to style it dynamically
-
-{% highlight javascript %}
-var myElem = document.getElementById('mytext');
-myElem.style.fontSize = '50px';
-{% endhighlight %}
-
-Note:
-
-  - dot notation as in _document._
- 
-
-####Programmer-defined functions
-
-{% highlight javascript %}
-function myFunction() {
-  var a = 123;
-  alert(a);
-}
-{% endhighlight %}
-
-Note the difference between defining a function and executing it.
-
-The above defines a function, but to actually call it we need to add:
-
-{% highlight javascript %}
-myFunction();
-{% endhighlight %}
-
-Functions can be called either within the JavaScript code itself or via ....
-
-####Event Listeners
-
-{% highlight javascript %}
-var btn = document.getElementById('myButton');
-btn.addEventListener('click', myFunction);
-{% endhighlight %}
-
-The above two lines of JavaScript code
-
-  - get the button element from the HTML document and save it to a variable
-  - tells the browser to execute myFunction when the button is clicked
-
-
-
-As an exercise, add to our example web page the facility to 
-
-  - choose a colour from a drop-down and 
-  - set the text of our paragraph to be displyed in that colour.
-
-
-
-###Additional Resource Links
-- [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
-- [Mozilla JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [Mozilla HTML Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+- [Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
