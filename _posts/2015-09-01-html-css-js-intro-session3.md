@@ -79,29 +79,47 @@ As we did in the case of CSS, we need to let our HTML know about our JavaScript.
 <script src="script.js"></script>
 {% endhighlight %}
 
-####Variables
+Note:
+
+  - can be placed in either _<head>_ or _<body>_ sections
+  - rule of thumb: 
+    - 3rd party libraries in _<head>_
+    - custom JavaScript in _<body>_
+  
+
+<p class="ul">Variables:</p>
 
 Here's how a variable is defined in JavaScript.
 
 {% highlight javascript %}
 var empName = 'Jane Doe';
 var empExt = 4279;
-alert(empName);
-alert(empExt);
-alert('Name:' + empName + '  Ext:' + empExt);
 {% endhighlight %}
 
 Note:
 
-  - the word _var_
-  - variable assignment 
+  - the keyword _var_
+  - variable assignment operator
   - naming rules and conventions
-  - case-sensitive
+    - letters, numbers, _ , $
+    - cannot start with a number
+    - meaningful
+    - camel-case
+  - **case-sensitive**
   - common simple types: numeric, string, boolean
 
-####Built-in functions
+<p class="ul">Built-in functions:</p>
 
-_alert()_ is a JavaScript function.
+_alert()_ is a JavaScript function. 
+
+- display values of variables and expressions
+- crude but useful tool for testing
+
+{% highlight javascript %}
+alert(empName);
+alert(empExt);
+alert('Name:' + empName + '  Ext:' + empExt);
+{% endhighlight %}
 
 Another built-in function is _getElementById()_ 
 
@@ -114,10 +132,10 @@ myElem.style.fontSize = '50px';
 
 Note:
 
-  - dot notation as in _document._
+  - dot notation as in _document._ and _style.fontSize_
  
 
-####Programmer-defined functions
+<p class="ul">Programmer-defined functions:</p>
 
 {% highlight javascript %}
 function myFunction() {
@@ -136,7 +154,7 @@ myFunction();
 
 Functions can be called either within the JavaScript code itself or via ....
 
-####Event Listeners
+<p class="ul">Event Listeners:</p>
 
 {% highlight javascript %}
 var btn = document.getElementById('myButton');
@@ -148,13 +166,20 @@ The above two lines of JavaScript code
   - get the button element from the HTML document and save it to a variable
   - tells the browser to execute myFunction when the button is clicked
 
-
-
-As an exercise, add to our example web page the facility to 
+As an exercise, let's add to our example web page the facility to: 
 
   - choose a colour from a drop-down and 
-  - set the text of our paragraph to be displyed in that colour.
+  - set the text of our paragraph to be displayed in that colour.
 
+Suggested steps:
+
+- make sure each element has a unique id
+- get the button element
+- add an event listener so that button click would call a function
+- create the function
+- get the selected colour
+- get the paragraph element
+- apply the colour to the paragraph element
 
 
 ###Additional Resource Links
