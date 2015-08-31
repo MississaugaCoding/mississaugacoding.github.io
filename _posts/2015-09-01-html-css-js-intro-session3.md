@@ -157,10 +157,10 @@ Functions can also be called via ...
 
 <p class="ul">Event Listeners:</p>
 
-In JavaScript event listeners give us the means to trap for particular events and react to them.
+In JavaScript we can watch for particular events and react to them.
 
 - to watch out ("listen") for particular UI event (e.g. click) on particular element (e.g. button)
-- to execute some code (e.g. handler function) when that event occurs 
+- to execute some code (e.g. handler function) whenever that event occurs 
 
 {% highlight javascript %}
 var btn = document.getElementById('myButton');
