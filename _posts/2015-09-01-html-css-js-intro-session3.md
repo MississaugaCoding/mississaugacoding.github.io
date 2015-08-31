@@ -73,7 +73,7 @@ The _id_ and _class_ attributes are useful because they allow us to refer to spe
 
 ###So, finally, let's talk some JavaScript
 
-As we did in the case of CSS, we need to let our HTML know about our JavaScript.
+As we did in the case of CSS, we need to let our HTML document know about our JavaScript code.
 
 {% highlight html %}
 <script src="script.js"></script>
@@ -83,8 +83,9 @@ Note:
 
   - can be placed in either _<head>_ or _<body>_ sections
   - rule of thumb: 
-    - 3rd party libraries in _<head>_
-    - custom JavaScript in _<body>_
+    - 3rd party libraries in _<head>_ section
+    - custom JavaScript in _<body>_ section 
+      -  e.g. just before _</body>_ to ensure elements referenced have been rendered 
   
 
 <p class="ul">Variables:</p>
@@ -110,10 +111,10 @@ Note:
 
 <p class="ul">Built-in functions:</p>
 
-_alert()_ is a JavaScript function. 
+_alert()_ is a built-in JavaScript function. 
 
 - display values of variables and expressions
-- crude but useful tool for testing
+- crude but useful tool for a quick check/test
 
 {% highlight javascript %}
 alert(empName);
@@ -121,7 +122,7 @@ alert(empExt);
 alert('Name:' + empName + '  Ext:' + empExt);
 {% endhighlight %}
 
-Another built-in function is _getElementById()_ 
+Another built-in JavaScript function is _getElementById()_ 
 
 - fetches an HTML element from our page so we can do something to it, e.g. to style it dynamically
 
@@ -152,9 +153,14 @@ The above defines a function, but to actually call it we need to add:
 myFunction();
 {% endhighlight %}
 
-Functions can be called either within the JavaScript code itself or via ....
+Functions can also be called via ...
 
 <p class="ul">Event Listeners:</p>
+
+In JavaScript event listeners give us the means to trap for particular events and react to them.
+
+- to watch out ("listen") for particular UI event (e.g. click) on particular element (e.g. button)
+- to execute some code (e.g. handler function) when that event occurs 
 
 {% highlight javascript %}
 var btn = document.getElementById('myButton');
