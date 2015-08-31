@@ -2,7 +2,7 @@
 layout: post
 title: HTML/CSS/JS - Intro Session 3
 comments: true
-publish: false
+publish: true
 --- 
 
 As we continue covering the basic concepts of front-end web development, the main focus this week will be JavaScript.
