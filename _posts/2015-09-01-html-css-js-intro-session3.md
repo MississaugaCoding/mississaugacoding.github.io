@@ -209,7 +209,7 @@ One working solution:
             <option value="yellow">Yellow</option>
         </select>
         
-        <button id="btnColour">Click Me</button>
+        <button id="btnColour">Make It So!</button>
         <script src="script.js"></script>
     </body>
 </html>
