@@ -186,7 +186,47 @@ Suggested steps:
 - get the selected colour
 - get the paragraph element
 - apply the colour to the paragraph element
+ 
 
+One working solution:
+
+###index.html
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title> 
+        <link rel="stylesheet" href="style.css" />  
+    </head>
+    <body>
+        <p id="myText">Some text on my web page</p>
+        
+        <select id="selColour">
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        
+        <button id="btnColour">Click Me</button>
+        <script src="script.js"></script>
+    </body>
+</html>
+{% endhighlight %}
+
+###script.js
+{% highlight javascript %}
+var btn = document.getElementById('btnColour');
+btn.addEventListener('click',applyColour);
+
+function applyColour() {
+    var sel = document.getElementById('selColour');
+    var col = sel.value;
+    var par = document.getElementById('myText');
+    par.style.color = col;
+}
+{% endhighlight %}
 
 ###Additional Resource Links
 - [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
