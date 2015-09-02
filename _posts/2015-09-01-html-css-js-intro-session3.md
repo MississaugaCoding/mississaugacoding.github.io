@@ -228,6 +228,8 @@ function applyColour() {
 }
 {% endhighlight %}
 
+No change required to style.css.
+
 ###Additional Resource Links
 - [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
 - [Mozilla JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
