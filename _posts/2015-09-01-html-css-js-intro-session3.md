@@ -188,7 +188,7 @@ Suggested steps:
 - apply the colour to the paragraph element
  
 
-One working solution:
+Sample solution:
 
 ###index.html
 {% highlight html %}
