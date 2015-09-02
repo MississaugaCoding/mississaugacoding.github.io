@@ -199,6 +199,10 @@ Sample solution:
         <link rel="stylesheet" href="style.css" />  
     </head>
     <body>
+    
+        <!-- All elements have been given an id attribute -->
+        <!-- To enable us to refer to elements from Javascript -->
+        
         <p id="myText">Some text on my web page</p>
         
         <select id="selColour">
@@ -210,25 +214,39 @@ Sample solution:
         </select>
         
         <button id="btnColour">Make It So!</button>
+        
+        <!-- Script tag brings in Javascript into our HTML. -->
+        <!-- Placed here to make sure all referenced --> 
+        <!-- elements have already been defined.     -->
         <script src="script.js"></script>
+        
     </body>
 </html>
 {% endhighlight %}
 
 ###script.js
 {% highlight javascript %}
+// get button element 
 var btn = document.getElementById('btnColour');
-btn.addEventListener('click',applyColour);
 
+// set up an event listener on button element 
+// this means whenever user clicks the button, 
+// call the function applyColour() 
+btn.addEventListener('click', applyColour);
+
+// function to change the colour of our paragraph text
 function applyColour() {
+    // get the comb-box element
     var sel = document.getElementById('selColour');
-    var col = sel.value;
+    var col = sel.value; // get the selected value
+    
+    // get the paragraph element
     var par = document.getElementById('myText');
-    par.style.color = col;
+    par.style.color = col;   // style paragraph text colour
 }
 {% endhighlight %}
 
-No change required to style.css.
+No changes to style.css were required at all.
 
 ###Additional Resource Links
 - [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
