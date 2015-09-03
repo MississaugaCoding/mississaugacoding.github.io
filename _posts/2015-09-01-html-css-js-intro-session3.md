@@ -192,7 +192,7 @@ Sample solution:
 
 ###index.html
 {% highlight html %}
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>My Web Page</title> 
