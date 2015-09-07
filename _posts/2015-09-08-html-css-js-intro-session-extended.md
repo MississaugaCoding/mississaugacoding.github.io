@@ -157,7 +157,7 @@ Now we need to edit the path to the CSS and Javascript in our `index.html`
 <script src="./public/js/script.js"></script>
 {% endhighlight %}
 
-That's about it! Now let's us dive more into JavaScript
+That's about it! Now let's dive more into JavaScript.
 
 ##Operators 
 
@@ -239,7 +239,7 @@ alert(myName); //won't work
 
 {% endhighlight %}
 
-**Automatic GLobal** is when the value is assigned to a variable without the `var` object. For example: `x = 9`, anywhere in the script, **even inside the function** (try it out).
+**Automatic Global** is when the value is assigned to a variable without the `var` object. For example: `x = 9`, anywhere in the script, **even inside the function** (try it out).
 
 **The Lifetime of JavaScript Variables**:
 
