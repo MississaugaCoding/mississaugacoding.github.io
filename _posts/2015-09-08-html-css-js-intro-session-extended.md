@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML/CSS/JS Extended"
+title: "HTML/CSS/JS - Extended"
 comments: true
 publish: true
 ---
