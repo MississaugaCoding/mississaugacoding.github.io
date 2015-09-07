@@ -334,4 +334,4 @@ Now you have your first mini calculator and which addresses almost everything ex
 
 ##References:
 
-- [W3 School, JavaScript](http://www.w3schools.com/js/default.asp) 
+- [W3 Schools, JavaScript](http://www.w3schools.com/js/default.asp) 
