@@ -259,4 +259,79 @@ Now let's learn more about JavaScript by doing a small exercise. Remember our fa
 
 All the styling will go through our `style.css` file in our CSS folder. And all the magic will happen inside our JavaScript file `script.js`.
 
+Add this in `index.html` inside the `body` tag **before** your script tag.
 
+{% highlight html %}
+<!-- block element -->
+<div id="calculator-container">
+    <!-- block element -->
+    <p id="calculator-heading">My Personal Calculator</p>
+    <div class="calculator">
+        <!-- in-line elements -->
+        <input id="startingValue" placeholder="Starting Value" type="number" /> +
+        <input id="rateValue" placeholder="Rate" type="number" /> %
+    </div>
+    <p class="result-container">
+        Result is: <span id="result"></span>
+    </p>
+</div>	
+{% endhighlight %}
+
+In our JS script we will have to create 2 functions; one to deal with the HTML values, their format and displaying the output, and another one to do all the math and **return** the result for us. **Explanation will be available via the comments**.
+
+**executeCalculator**: Main function to be called in our event listeners.
+{% highlight javascript %}
+/*	
+	- This is our real time function - the only function to be called
+	- Variables has to be created first!
+*/
+var executeCalculator =  function(){
+	//declare our values, default is 0
+	var startValue = document.getElementById('startingValue').value;
+	var rateValue = document.getElementById('rateValue').value;
+
+	//convert to number first
+	startValue = Number(startValue);
+	rateValue = Number(rateValue);
+
+	//calculate method will ONLY deal with our arithmetic operations
+	var result = calculate(startValue, rateValue);
+	//show the result
+	document.getElementById('result').innerHTML = result;
+}
+{% endhighlight %}
+
+**calculate**: We pass the input into here, and return the result to the calling function.
+{% highlight javascript %}
+//referenced in executeCalculator()
+function calculate(value, rate){
+	var ratePercentage = rate/100; 
+	var result = value + (value * ratePercentage);
+
+	//2 decimal places, toFixed() only works on Number type.
+	result = result.toFixed(2); //override variable
+
+	return result;
+}
+{% endhighlight %}
+
+Now we simply attach **executeCalculator** as our event listener. We want to find the answer in real time, meaning as soon as a change occurs to any of our HTML input elements. The `change` event is the right choice for this job.
+{% highlight javascript %}
+//Event Listener: Change
+document.getElementById('startingValue')
+		.addEventListener('change', executeCalculator);
+
+document.getElementById('rateValue')
+		.addEventListener('change', executeCalculator);
+{% endhighlight %}
+
+For trying a list of other event listeners, visit [this link to W3 Schools](http://www.w3schools.com/jsref/dom_obj_event.asp).
+
+###That's it! 
+Now you have your first mini calculator and which addresses almost everything explained on this page!
+
+#To be Continued: Styling using CSS
+
+##References:
+
+- [W3 School, JavaScript](http://www.w3schools.com/js/default.asp) 
