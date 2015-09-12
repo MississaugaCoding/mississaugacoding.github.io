@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML/CSS/JS - Extended"
+title: "HTML/CSS/JS - Extended - Part I"
 comments: true
 publish: true
 ---
@@ -330,7 +330,7 @@ For trying a list of other event listeners, visit [this link to W3 Schools](http
 ###That's it! 
 Now you have your first mini calculator and which addresses almost everything explained on this page!
 
-#To be Continued: Styling using CSS
+#To be Continued - Part II: Styling using CSS
 
 ##References:
 
