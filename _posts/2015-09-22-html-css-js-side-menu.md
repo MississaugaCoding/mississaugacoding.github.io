@@ -2,7 +2,7 @@
 layout: post
 title: "HTML/CSS/JS - A Toggled Side-menu"
 comments: true
-publish: true
+publish: false
 ---
 
 A key part of any web page front-end is navigation, enabling the user to go from one section of the site to another easily and intuitively.
