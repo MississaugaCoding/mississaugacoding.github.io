@@ -2,12 +2,12 @@
 layout: post
 title: "HTML/CSS/JS - A Toggled Side-menu"
 comments: true
-publish: false
+publish: true
 ---
 
 A key part of any web page front-end is navigation, enabling the user to go from one section of the site to another easily and intuitively.
 
-This week we will talk about coding a toggled side menu. The goal is to produce something like [this](http://mississaugacoding.2fh.co/sidemenu) which, incidentally, should work nicely on any device, including smartphones and tablets.
+This week we will talk about coding a toggled side menu which, incidentally, should work nicely on any device, including smartphones and tablets.
 
 Through this exercise we will revise:
 
@@ -32,6 +32,9 @@ New things we will cover include:
 - JavaScript 
   - `if` statements
 
+{% comment %}
+The goal is to produce something like [this](http://mississaugacoding.2fh.co/sidemenu).
+{% endcomment %}
 
 ##Code
 
