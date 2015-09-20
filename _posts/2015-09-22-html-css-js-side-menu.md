@@ -7,7 +7,7 @@ publish: true
 
 A key part of any web page front-end is navigation, enabling the user to go from one section to another easily and intuitively.
 
-This week we will talk about coding a toggled side menu which, incidentally, should work nicely on any device, including smartphones and tablets.
+This week we will talk about coding a toggled side-menu which, incidentally, should work nicely on any device, including smartphones and tablets.
 
 Through this exercise we will revise:
 
