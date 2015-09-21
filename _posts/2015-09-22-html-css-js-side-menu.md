@@ -42,9 +42,10 @@ The complete code for the session will be published on this blog post, as well a
 
 ##References &amp; Resources
 
-- [W3Schools - HTML nav Tag](http://www.w3schools.com/tags/tag_nav.asp)
-- [W3Schools - HTML ul Tag](http://www.w3schools.com/tags/tag_ul.asp)
-- [Mozilla - Using viewport meta Tag](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag)
-- [W3Schools - Responsive Web Design](http://www.w3schools.com/css/css_rwd_viewport.asp)
-- [CSS Tricks - Position](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+- [HTML nav Tag](http://www.w3schools.com/tags/tag_nav.asp)
+- [HTML ul Tag](http://www.w3schools.com/tags/tag_ul.asp)
+- [Using viewport meta Tag](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag)
+- [Responsive Web Design](http://www.w3schools.com/css/css_rwd_viewport.asp)
+- [CSS Position](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+- [CSS Transition](http://www.w3schools.com/css/css3_transitions.asp)
 
