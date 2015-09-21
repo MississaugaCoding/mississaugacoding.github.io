@@ -13,7 +13,7 @@ Through this exercise we will revise:
 
 - general HTML document structure
 - CSS and JavaScript integration
-- Stylesheet rules targeting HTML elements by `id`
+- CSS rules targeting HTML elements by `class`/`id`
 - JavaScript event listeners and event handling
 
 New things we will cover include:
@@ -30,7 +30,8 @@ New things we will cover include:
   - `transition`
 
 - JavaScript 
-  - `if` statements
+  - `querySelector` function 
+  - `if` statement
 
 {% comment %}
 The goal is to produce something like [this](http://mississaugacoding.2fh.co/sidemenu).
