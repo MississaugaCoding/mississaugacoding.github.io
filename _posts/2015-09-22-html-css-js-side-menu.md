@@ -45,8 +45,10 @@ The complete code for the session will be published on this blog post, as well a
 
 - [HTML nav Tag](http://www.w3schools.com/tags/tag_nav.asp)
 - [HTML ul Tag](http://www.w3schools.com/tags/tag_ul.asp)
+- [CSS position Property](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+- [CSS transition Property](http://www.w3schools.com/css/css3_transitions.asp)
+- [JavaScript querySelector() Function](http://www.w3schools.com/jsref/met_document_queryselector.asp)
+- [JavaScript if Statement](http://www.w3schools.com/js/js_if_else.asp)
 - [Using viewport meta Tag](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag)
 - [Responsive Web Design](http://www.w3schools.com/css/css_rwd_viewport.asp)
-- [CSS Position](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
-- [CSS Transition](http://www.w3schools.com/css/css3_transitions.asp)
 
