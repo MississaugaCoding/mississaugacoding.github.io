@@ -33,13 +33,156 @@ New things we will cover include:
   - `querySelector` function 
   - `if` statement
 
-{% comment %}
 The goal is to produce something like [this](http://mississaugacoding.2fh.co/sidemenu).
-{% endcomment %}
+
 
 ##Code
 
-The complete code for the session will be published on this blog post, as well as on [our Github repository](https://github.com/MississaugaCoding//example-html-css-js).
+The complete code from this session is shown below. The same code has also been pushed to [our Github repository](https://github.com/MississaugaCoding/toggled-side-menu).
+
+###index.html
+{% highlight html %}
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Toggled Side-menu</title>
+        <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
+    </head>
+    <body>
+        <nav class="sidemenu">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+            <div class="menutoggle">&gt;</div>
+        </nav>
+        
+        <div class="content">
+            <h1 id="home">Home</h1>
+            <p class="text">
+                This is our home pageLorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            
+            <h1 id="about">About</h1>
+            <p class="text">
+                Some info about usLorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            
+            <h1 id="contact">Contact Us</h1>
+            <p class="text">
+                Our contact detailsLorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ut quae recusandae enim debitis incidunt voluptatum nisi repellendus. Minus, maxime, voluptatum maiores adipisci fuga dignissimos eaque eveniet ex atque dolores eos voluptates aspernatur inventore officia cupiditate a quas quisquam velit?
+            </p>
+        </div>
+        
+        <script type="text/javascript" src="./public/js/script.js"></script>
+    </body>
+</html>
+{%endhighlight%}
+
+###public/css/style.css
+{% highlight css %}
+body {
+    font-family: Helvetica;
+    font-size: 1.5em;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    max-width: 200px;
+    width:100%;
+    height:100%;
+    background-color: cornflowerblue;
+    margin-left: -200px;
+    transition: margin-left 500ms ease-in-out;
+}
+
+.content {
+    margin-left:250px;
+}
+
+.sidemenu ul {
+    list-style-type: none;
+}
+
+.sidemenu ul li {
+    padding: 5px 0px 5px 0px;
+}
+
+.sidemenu a {
+    color:white;
+    text-decoration:none;
+}
+
+.sidemenu a:hover {
+    text-decoration: underline;
+}
+
+.menutoggle {
+    color:white;
+    background-color: cornflowerblue;
+    position:absolute;
+    top: 0;
+    left: 200px;
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+}
+
+.menutoggle:hover {
+    cursor: pointer;
+}
+{%endhighlight%}
+
+
+###public/js/script.js
+{% highlight javascript %}
+var sidemenu = document.querySelector('.sidemenu');
+var menutoggle = document.querySelector('.menutoggle');
+
+menutoggle.addEventListener('click',toggleSideMenu);
+
+function toggleSideMenu() {
+    
+    if ( sidemenu.style.marginLeft === '0px' ) {
+        sidemenu.style.marginLeft = '-200px';
+        menutoggle.innerHTML = '>';
+    } else {
+        sidemenu.style.marginLeft = '0px';
+        menutoggle.innerHTML = '<';
+    }
+    
+}
+{%endhighlight%}
+
 
 ##References &amp; Resources
 
