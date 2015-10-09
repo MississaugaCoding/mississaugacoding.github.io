@@ -99,6 +99,7 @@ Here is a more [in-depth article](http://www.adequatelygood.com/JavaScript-Scopi
 
 
 **How do I know what JavaScript features are supported in my browser?**
+
 JavaScript is currently in its ES5 (ECMAScript 5) version with some of the most recent browser editions beginning to support features from ES6 (aka Harmony), although this latest standard is not fully supported by any browser yet.
 
 Web sites like [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and [W3 Schools](http://www.w3schools.com) give a good indication of browser compatibility for the various HTML/CSS/JavaScript elements, attributes, properties and functions. Another good site to peruse for this purpose is [Can I Use](http://www.caniuse.com).
@@ -106,7 +107,7 @@ Web sites like [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 
 **What technologies are involved in web applications? What should I learn?**
 
-This [talk by Will Stern](https://www.youtube.com/watch?v=pB0WvcxTbCA) of LearnCode.Academy gives an up-to-date view on the must-knows and nice-to-know things, as well as some great insights into where web development is headed.
+This [talk by Will Stern](https://www.youtube.com/watch?v=pB0WvcxTbCA) of LearnCode.Academy gives an up-to-date view on the must-knows and nice-to-knows, as well as some great insights into where web development is headed.
 
 A quick tip on setting up a development environment, especially for people who cannot install (or couldn't be bothered to install) all the different bits and pieces on their (work?) laptop: check out [Cloud9](http://c9.io). It gives you a complete (free) IDE, editor, support for all the main web programming languages, database, GitHub integration, everything you'll need to experiment and try things out, all running in your browser.
 
