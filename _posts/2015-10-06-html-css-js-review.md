@@ -65,6 +65,36 @@ In other words, function declarations vs. function expressions.
 
 The jury may still be out on this one, but one thing to keep in mind is that function declarations get hoisted whereas function expressions do not.
 
+To illustrate:
+
+{% highlight javascript %}
+
+// invoking function 'foo' before defining it
+// works because the function is defined with 
+// a function declaration, which gets 'hoisted'
+foo();   
+
+
+// invoking function 'bar' before defining it
+// does not work because the function is defined
+// with a function expression, which does not
+// get 'hoisted'
+bar();
+
+
+function foo() {
+    alert('called foo');
+}
+
+
+var bar = function() {
+    alert('called bar');
+}
+
+{% endhighlight %}
+
+In fact, if you run this script with the console on (F12), it gives an `Uncaught TypeError: bar is not a function`.
+
 Here is a more [in-depth article](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html) on the subject.
 
 
