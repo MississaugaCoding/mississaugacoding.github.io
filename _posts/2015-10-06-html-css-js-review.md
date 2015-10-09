@@ -61,9 +61,11 @@ This concept is also common in other programming languages.
 
 ###Defining a JavaScript function as a variable - pros and cons?
 
-Function declarations vs. function expressions. 
+In other words, function declarations vs. function expressions. 
 
-The jury is still out on this one, but meanwhile here is an [in-depth article](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/) on the subject.
+The jury may still be out on this one, but one thing to keep in mind is that function declarations get hoisted whereas function expressions do not.
+
+Here is a more [in-depth article](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html) on the subject.
 
 
 ###How do I know what JavaScript features are supported in my browser?
