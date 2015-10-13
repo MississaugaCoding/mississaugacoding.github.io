@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML/CSS/JS - More Q&A, Review & Practice"
+title: "HTML/CSS/JS - More Q&A & Review"
 comments: true
 publish: true
 ---
