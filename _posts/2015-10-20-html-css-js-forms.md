@@ -15,7 +15,7 @@ In order to be able to follow along and get the most out of this session, you ma
 
 Alternatively, and probably much easier, you may want to [sign up free onto Cloud9](https://c9.io/web/sign-up/free) as suggested in [this blog post](http://mississaugacoding.github.io/2015/10/06/html-css-js-review/) from some weeks ago. More details as to what Cloud9 is (and is not) can be found [here](http://mississaugacoding.github.io/2015/10/13/html-css-js-more-review/) and officially [here](https://docs.c9.io/docs/).
 
-The full code example will be posted here after the session.
+The full code example, along with any related resource and reference links, will be posted here after the session.
 
 Meanwhile, to help you prepare, here is the back-end SQL code for creating the database table, and the PHP code for saving the form data to that table:
 
