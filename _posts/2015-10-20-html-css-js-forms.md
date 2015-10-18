@@ -15,7 +15,47 @@ In order to be able to follow along and get the most out of this session, you ma
 
 Alternatively, and probably much easier, you may want to [sign up free onto Cloud9](https://c9.io/web/sign-up/free) as suggested in [this blog post](http://mississaugacoding.github.io/2015/10/06/html-css-js-review/) from some weeks ago. More details as to what Cloud9 is (and is not) can be found [here](http://mississaugacoding.github.io/2015/10/13/html-css-js-more-review/) and officially [here](https://docs.c9.io/docs/).
 
-As always, a full code example will be included here after the session.
+The full code example will be posted here after the session.
+
+Meanwhile, to help you prepare, here is the back-end SQL code for creating the database table, and the PHP code for saving the form data to that table:
+
+###SQL to create database table
+{% highlight sql %}
+CREATE TABLE IF NOT EXISTS `person` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `fullname` varchar(50) DEFAULT NULL,
+  `gender` char(1) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `language` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+{% endhighlight %}
 
 
+###backend/savedata.php
+{% highlight php %}
+<?php
 
+// fetch POSTed data
+// possibly fetch other fields here
+$name = filter_input(INPUT_POST, 'fullname');
+
+// connect to the database
+// ** replace connection parms according to your set-up **
+$dbConn = mysqli_connect("127.0.0.1", "user", "pass", "dbname", 3306);
+
+// prepare insert sql statement 
+// possibly add other fields to insert and bind
+$sqlInsert = "INSERT INTO `person` (`name`) VALUES (?)";
+$stmt = mysqli_prepare($dbConn, $sqlInsert);
+mysqli_stmt_bind_param($stmt, 's', $name);
+
+// execute the insert sql statement 
+mysqli_stmt_execute($stmt);
+
+// close statement and connection 
+mysqli_stmt_close($stmt);
+mysqli_close($dbConn);
+
+exit();
+{% endhighlight%}
