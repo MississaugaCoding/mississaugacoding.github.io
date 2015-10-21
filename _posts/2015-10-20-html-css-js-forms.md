@@ -142,3 +142,18 @@ mysqli_close($dbConn);
 
 exit();
 {% endhighlight%}
+
+
+
+##References &amp; Resources
+
+- [HTML form Tag](http://www.w3schools.com/tags/tag_form.asp)
+- [Form method attribute: post vs. get](http://www.w3schools.com/tags/att_form_method.asp)
+- [HTML input Tag](http://www.w3schools.com/tags/tag_input.asp)
+- [What's AJAX?](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+- [AJAX Tutorial](http://www.w3schools.com/ajax/default.asp)
+- [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData)
+- [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+
+
+
