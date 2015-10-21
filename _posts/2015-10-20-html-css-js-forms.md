@@ -15,7 +15,90 @@ In order to be able to follow along and get the most out of this session, you ma
 
 Alternatively, and probably much easier, you may want to [sign up free onto Cloud9](https://c9.io/web/sign-up/free) as suggested in [this blog post](http://mississaugacoding.github.io/2015/10/06/html-css-js-review/) from some weeks ago. More details as to what Cloud9 is (and is not) can be found [here](http://mississaugacoding.github.io/2015/10/13/html-css-js-more-review/) and officially [here](https://docs.c9.io/docs/).
 
-The full code example, along with any related resource and reference links, will be posted here after the session.
+Unfortunately we did not get enough time to finish going through the example. Next week we will review what we did this week and continue where we left off.
+
+This is the code as we left it. <strong>Please note that this is not a final, complete solution. It's just where we left off.<strong>
+
+###index.html
+{% highlight html %}
+<!doctype html>
+<html>
+  <head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
+  </head>
+  <body>
+    
+    <div id="main">
+      
+      <form id="myform" method="post">
+        
+        Full Name:<br/>
+        <input id="fullname" type="text" name="fullname" />
+        
+        <br/><br/>
+        <input type="button" id="btnSave" value="Save"/>
+        
+      </form>
+      
+    </div>
+    
+    <br/><br/>
+    <div id="msg"></div>
+    
+    
+    <script type="text/javascript" src="./public/js/script.js"></script>
+  </body>
+</html>
+{% endhighlight %}
+
+###script.js 
+{% highlight javascript %}
+var btn = document.getElementById('btnSave');
+var fld = document.getElementById('fullname');
+var msg = document.getElementById('msg');
+var frm = document.getElementById('myform');
+
+btn.addEventListener('click', submitForm);
+
+function submitForm() {
+    
+    msg.innerHTML = '';  
+    
+    if ( fld.value==='' ) {
+        
+        msg.innerHTML = 'Please key in a name.';
+        
+    } else {
+        
+        
+        /* THIS SECTION OF THE CODE HAS YET TO BE COMPLETED  */
+        
+        // prepare form data
+        var data = new FormData(frm);
+        
+        // send data to server via AJAX request to server
+        // create
+        var xhr = new XMLHttpRequest();
+        
+        // open     --- TO BE CONTINUED ---
+        //xhr.open(  need arguments here   );
+        
+        // send data
+        //xhr.send(data);
+        
+    }
+    
+}
+{% endhighlight %}
+
+###style.css
+{% highlight css %}
+div#msg {
+    color:red;
+}
+{% endhighlight %}
+
 
 Meanwhile, to help you prepare, here is the back-end SQL code for creating the database table, and the PHP code for saving the form data to that table:
 
