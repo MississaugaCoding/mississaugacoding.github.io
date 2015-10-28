@@ -15,9 +15,7 @@ In order to be able to follow along and get the most out of this session, you ma
 
 Alternatively, and probably much easier, you may want to [sign up free onto Cloud9](https://c9.io/web/sign-up/free) as suggested in [this blog post](http://mississaugacoding.github.io/2015/10/06/html-css-js-review/) from some weeks ago. More details as to what Cloud9 is (and is not) can be found [here](http://mississaugacoding.github.io/2015/10/13/html-css-js-more-review/) and officially [here](https://docs.c9.io/docs/).
 
-Unfortunately we did not get enough time to finish going through the example. Next week we will review what we did this week and continue where we left off.
-
-This is the code as we left it. <strong>Please note that this is not a final, complete solution. It's just where we left off.<strong>
+This is the complete code example. Please post any questions or difficulties in the comments section below.
 
 ###index.html
 {% highlight html %}
@@ -60,33 +58,35 @@ var msg = document.getElementById('msg');
 var frm = document.getElementById('myform');
 
 btn.addEventListener('click', submitForm);
+fld.focus();
 
 function submitForm() {
     
-    msg.innerHTML = '';  
+    msg.innerHTML = '';  // clear any previous messages
     
     if ( fld.value==='' ) {
         
         msg.innerHTML = 'Please key in a name.';
+        fld.focus();  // places cursor in the form field
         
     } else {
-        
-        
-        /* THIS SECTION OF THE CODE HAS YET TO BE COMPLETED  */
         
         // prepare form data
         var data = new FormData(frm);
         
-        // send data to server via AJAX request to server
+        // send data to server via AJAX
         // create
         var xhr = new XMLHttpRequest();
         
-        // open     --- TO BE CONTINUED ---
-        //xhr.open(  need arguments here   );
+        // open
+        xhr.open('post', 'backend/savedata.php', true);
         
         // send data
-        //xhr.send(data);
+        xhr.send(data);
         
+        msg.innerHTML = 'Record has been saved';
+        frm.reset();  // clears the form for next input
+        fld.focus();
     }
     
 }
@@ -100,7 +100,7 @@ div#msg {
 {% endhighlight %}
 
 
-Meanwhile, to help you prepare, here is the back-end SQL code for creating the database table, and the PHP code for saving the form data to that table:
+And here is the back-end SQL code for creating the database table, and the PHP code for saving the form data to that table:
 
 ###SQL to create database table
 {% highlight sql %}
@@ -129,7 +129,7 @@ $dbConn = mysqli_connect("127.0.0.1", "user", "pass", "dbname", 3306);
 
 // prepare insert sql statement 
 // possibly add other fields to insert and bind
-$sqlInsert = "INSERT INTO `person` (`name`) VALUES (?)";
+$sqlInsert = "INSERT INTO `person` (`fullname`) VALUES (?)";
 $stmt = mysqli_prepare($dbConn, $sqlInsert);
 mysqli_stmt_bind_param($stmt, 's', $name);
 
