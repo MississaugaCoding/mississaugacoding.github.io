@@ -84,6 +84,8 @@ function submitForm() {
         // send data
         xhr.send(data);
         
+        // a better way would be to add an event listener 'readystatechange' on xhr
+        // but this will do for now...
         msg.innerHTML = 'Record has been saved';
         frm.reset();  // clears the form for next input
         fld.focus();
