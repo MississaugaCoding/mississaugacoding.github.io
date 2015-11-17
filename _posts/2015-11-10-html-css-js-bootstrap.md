@@ -15,9 +15,9 @@ You do not necessarily need to know jQuery to use Bootstrap, but it helps, and k
 
 jQuery's claim to fame is "write less, do more". It is a JavaScript library that simplifies (somewhat) what we've been doing so far in plain vanilla JavaScript: get a page element; listen for, and handle, events on that element; modify and/or add page elements, make AJAX calls, and so on. jQuery was originated by John Resig.
 
-In our talk this week we'll explore the reasons why one would use these frameworks, and how to start using them.
+In our talks we explore the reasons why one would use these frameworks, and how to start using them.
 
-Here is the code example we built and discussed during the session.
+Here is the Bootstrap code example we built and discussed during the first session.
 
 ###index.html
 {% highlight html %}
@@ -104,6 +104,7 @@ body {
 - [The Bootstrap Site](http://getbootstrap.com/)
 - [The jQuery Site](https://jquery.com/)
 - [W3Schools Bootstrap Tutorial](http://www.w3schools.com/bootstrap/)
+- [W3Schools jQuery Tutorial](http://www.w3schools.com/jquery/)
 
 
 
