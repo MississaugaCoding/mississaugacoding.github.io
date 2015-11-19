@@ -99,6 +99,154 @@ body {
 {% endhighlight %}
 
 
+And here is the jQuery code example we toyed around with during the second session.
+
+
+###index.html
+{% highlight html %}
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Example</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    
+    <!-- Link for optional custom CSS goes here -->
+    <link rel="stylesheet" href="./public/css/style.css" type="text/css" />
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>jQuery</h1>
+        </div>
+        
+        <p id="p1" class="mytext">
+            Paragraph ONE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, debitis, omnis, architecto eos voluptatem soluta laudantium provident repellendus excepturi nesciunt quia corporis delectus quaerat deserunt suscipit. Laudantium laborum asperiores repellat mollitia et a incidunt corporis minus rerum! Repellat, provident, ipsam similique magni ipsum eos quas praesentium enim dolorem ex reprehenderit rem id ad. Officiis, et, aspernatur dolor porro explicabo quibusdam dignissimos mollitia tenetur ipsa corporis quo sapiente debitis magnam cupiditate nisi nam id soluta. Animi, laborum, modi laudantium ea accusantium placeat incidunt tempore iusto aperiam vero vel cumque in est harum et possimus laboriosam quidem voluptatibus totam expedita recusandae architecto!
+        </p>
+        
+        <p id="p2" class="mytext">
+            Paragraph TWO Inventore, debitis, omnis, architecto eos voluptatem soluta laudantium provident repellendus excepturi nesciunt quia corporis delectus quaerat deserunt suscipit. Laudantium laborum asperiores repellat mollitia et a incidunt corporis minus rerum! Repellat, provident, ipsam similique magni ipsum eos quas praesentium enim dolorem ex reprehenderit rem id ad. Officiis, et, aspernatur dolor porro explicabo quibusdam dignissimos mollitia tenetur ipsa corporis quo sapiente debitis magnam cupiditate nisi nam id soluta. Animi, laborum, modi laudantium ea accusantium placeat incidunt tempore iusto aperiam vero vel cumque in est harum et possimus laboriosam quidem voluptatibus totam expedita recusandae architecto! Animi, laborum, modi laudantium ea accusantium placeat incidunt tempore iusto aperiam vero vel cumque in est harum et possimus laboriosam quidem voluptatibus totam expedita recusandae architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dicta voluptatibus consequuntur sed. Temporibus modi porro esse corporis accusantium. Ad, cumque alias distinctio aspernatur dolorem officiis expedita. Rem, temporibus, non voluptates fugiat blanditiis iste voluptatum odit enim laudantium molestiae cum voluptas tempora ea a dolorum ipsum repellendus architecto esse dignissimos.
+        </p>
+        
+        <p id="p3"></p>
+        
+        <button id="btn1" class="btn btn-primary btn-lg">Toggle</button>
+        
+        <h3 class="sub-header">DOM Traversal</h3>
+        <ul id="list">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>SubList
+                <ul id="sublist">
+                    <li>SubOne</li>
+                    <li>SubTwo</li>
+                    <li>SubThree</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <!-- script tag for custom JS goes here -->
+    <script type="text/javascript" src="./public/js/script.js"></script>
+</body>
+
+</html>
+{% endhighlight %}
+
+
+###script.js
+{% highlight javascript %}
+// note: all jQuery code needs to be wrapped inside a document ready function
+
+$(document).ready(function(){
+    
+    /* note: syntax to call jQuery methods generally consists of:
+    - dollar sign
+    - selector in brackets (and quotes)
+    - dot
+    - jQuery method name (with arguments if any)
+    */
+    
+    // select by tag name
+    $('p').fadeOut(2000);
+    
+    // select by id
+    $('#p1').fadeIn(2000);
+    $('#p2').fadeIn(2000);
+    
+    // select by class
+    $('.mytext').fadeOut(2000);
+    
+    
+    // some other methods
+    $('#p2').show();
+    $('#p1').slideDown(2000);
+    $('#p1').slideUp(2000);
+    $('#p2').fadeToggle(2000);
+    
+    // method chaining
+    $('#p1').slideToggle(1500).delay(1000).fadeToggle(1500);
+    
+    // event listening and handling
+    $('#btn1').on('click', handleButtonClick );
+    
+    function handleButtonClick() {
+    
+        // add/modify inner html to an element    
+        $('#p3').toggle().html('My third paragraph');
+    
+        // add/modify css of an element
+        $('#p3').css({
+            'color': 'red',
+            'font-weight': 'bold'
+        });
+        
+        // traverse to first item in sublist and add a css class
+        $('#sublist li').first().addClass('orange');
+        
+        // traverse to second list item (count starts from zero)
+        $('#list li:eq(1)').toggleClass('blue');
+        
+        // next / previous
+        $('#list li').first().next().fadeToggle().fadeToggle();
+        
+        $('#list li').last().prev().html('THIS LIST ITEM HAS CHANGED TOO');
+        
+    }
+    
+});
+{% endhighlight %}
+
+
+###style.css
+{% highlight css %}
+.blue {
+    color: blue;
+    font-weight: bold;
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
+    border: 1px solid black;
+}
+{% endhighlight %}
+
+
 ##References &amp; Resources
 
 - [The Bootstrap Site](http://getbootstrap.com/)
