@@ -9,6 +9,8 @@ This week we picked another one of the several Bootstrap components - the image 
 
 For your reference and practice, here is the code we had built by the end of the session.
 
+Note that this code assumes we want to loop through five images, each 510px wide by 340px high, and which are stored in a separate folder called `images`.
+
 ###index.html
 {% highlight html %}
 <!doctype html>
@@ -22,7 +24,7 @@ For your reference and practice, here is the code we had built by the end of the
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 
-    <!-- Link for optional custom CSS goes here -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
@@ -87,7 +89,6 @@ For your reference and practice, here is the code we had built by the end of the
 
 </html>
 {% endhighlight %}
-
 
 
 ###style.css
