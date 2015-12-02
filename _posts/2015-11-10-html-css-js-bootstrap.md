@@ -15,7 +15,9 @@ You do not necessarily need to know jQuery to use Bootstrap, but it helps, and k
 
 jQuery's claim to fame is "write less, do more". It is a JavaScript library that simplifies (somewhat) what we've been doing so far in plain vanilla JavaScript: get a page element; listen for, and handle, events on that element; modify and/or add page elements, make AJAX calls, and so on. jQuery was originated by John Resig.
 
-In our talks we explore the reasons why one would use these frameworks, and how to start using them.
+In our first talk we explored the reasons why one would use these frameworks, and how to start using them. We then went ahead and built a web page menu example using Bootstrap classes. 
+
+In our second talk, we looked at some jQuery methods, including event listeners and handlers.
 
 Here is the Bootstrap code example we built and discussed during the first session.
 
@@ -253,7 +255,3 @@ $(document).ready(function(){
 - [The jQuery Site](https://jquery.com/)
 - [W3Schools Bootstrap Tutorial](http://www.w3schools.com/bootstrap/)
 - [W3Schools jQuery Tutorial](http://www.w3schools.com/jquery/)
-
-
-
-
