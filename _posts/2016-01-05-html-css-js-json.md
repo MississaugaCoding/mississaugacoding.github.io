@@ -161,7 +161,7 @@ A template is a pattern that we wish to apply to each object in the array. HTML 
 There are several JavaScript templating libraries. For this example we will use Mustache. (See link in references section.)
 
 
-###index,html
+###index.html
 {% highlight html %}
 <!doctype html>
 <html>
