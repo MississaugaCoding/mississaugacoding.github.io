@@ -5,7 +5,7 @@ comments: true
 publish: true
 ---
 
-Dynamic, data-driven web applications nowadays often use JavaScript Object Notation - JSON - to communicate with a back-end database or web service of some sort.
+Dynamic, data-driven web applications nowadays often use **J**ava**S**cript **O**bject **N**otation - **JSON** - to communicate with a back-end database or web service of some sort.
 
 JSON is a simple, light-weight format for storing and passing data. It is native to JavaScript, but it is also supported in various other languages and web technologies.
 
