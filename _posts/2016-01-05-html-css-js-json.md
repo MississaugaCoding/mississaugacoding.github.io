@@ -7,15 +7,15 @@ publish: true
 
 Dynamic, data-driven web applications nowadays often use **J**ava**S**cript **O**bject **N**otation - **JSON** - to communicate with a back-end database or web service of some sort.
 
-JSON is a simple, light-weight format for storing and passing data. It is native to JavaScript, but it is also supported in various other languages and web technologies.
+JSON is a simple, light-weight format (as opposed to, say, XML) for storing and passing data. It is native to JavaScript, but it is also supported in various other languages and web technologies.
 
 A simple example of this format, assigned to a variable:
 
 `var json = {"fname":"Joe"};`
 
-It is a name-value pair notation. Note the field name in **double quotes**, followed by a colon, followed by the value, and all of that enclosed in curly braces. 
+It is a key-value pair notation. Note the key in **double quotes**, followed by a colon, followed by the value, and all of that enclosed in curly braces. 
 
-We can have multiple name-value pairs, for example:
+We can have multiple key-value pairs, for example:
 
 `var json = {"id":1, "fname":"Joe", "lname":"Smith", "member":true};`
 
@@ -32,7 +32,7 @@ var json = {
 };
 {% endhighlight %}
 
-Think of objects as records, and name-value pairs as fields.
+Think of objects as records, and key-value pairs as fields.
 
 JSON can also exist as a file, usually with a `.json` extension, for example: data.json
 
@@ -151,12 +151,12 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-Note how the `forEach()` method takes a callback function, which in turn takes a variable name. This variable name `client` is what we use inside the loop to refer to the individual object or record, and get its fields.
+Note how the `forEach()` method takes a callback function, which in turn takes a variable name. This variable name `client` is what we plan to use inside the loop to refer to the individual object (record), and get at its key-value pairs (fields).
 
 ##Templates
 This process of reading in multiple JSON objects can be further simplified by using templates.
 
-A template is a pattern that we wish to apply to each object in the array. HTML 5 introduced a new `template` tag for this purpose.
+A template is a pattern that we wish to apply to each object in the array. HTML5 introduced a new `template` tag for this purpose.
 
 There are several JavaScript templating libraries. For this example we will use Mustache. (See link in references section.)
 
