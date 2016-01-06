@@ -200,6 +200,10 @@ $(document).ready(function() {
     
         $('#divClients').html( Mustache.render( $('#mytemplate').html() , mydata ) );
         
+    })
+    
+    .fail(function() {
+      alert( "error" );  // in case something goes wrong with our ajax call
     });
     
 });
