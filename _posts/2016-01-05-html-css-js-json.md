@@ -49,7 +49,7 @@ Note that in this case there's no variable name and no semi-colons, just the JSO
 
 ##Passing JSON data to HTML page
 
-To display data on an HTML page, use JSON as if it were a variable (concatentation etc.) employing the dot notation as needed to access the fields within the object. For example:
+To display data on an HTML page, use JSON as if it were a variable (concatenation etc.) employing the dot notation as needed to access the fields within the object. For example:
 
 ###index.html
 {% highlight html %}
