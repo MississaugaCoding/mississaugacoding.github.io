@@ -6,7 +6,7 @@ publish: true
 ---
 At our last session we discussed the JSON data format and went over some examples of what we can do with JavaScript objects. 
 
-Those examples centred around some JSON data that we were reading in from a file. Not a common scenario in reality, but it served to illustrate the key theoretical points and concepts. Today we will code some practical applications of those concepts. 
+Those examples centred around some JSON data that we were reading in from a file. Not a common scenario in reality, but it served to illustrate the key theoretical points and concepts. So next we will code some practical applications of those concepts. 
 
 There are lots of third-party JSON APIs freely available on the web, and today's examples will show how you can use these APIs for your web pages.
 
