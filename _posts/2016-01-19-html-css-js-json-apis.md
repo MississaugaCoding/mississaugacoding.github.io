@@ -12,8 +12,7 @@ There are lots of third-party JSON APIs freely available on the web, and today's
 
 While the vast majority of JSON APIs are free to use, some of them do require that you register beforehand, and that your AJAX calls to the service include your own unique API key which is given to you upon registration.
 
-
-##Watch this space for example code to be posted here later.
+Sample code of all the examples will be posted here later.
 
 
 ##References &amp; Resources
