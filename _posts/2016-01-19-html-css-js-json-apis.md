@@ -49,7 +49,7 @@ Here is the complete example we coded during the session.
     <!-- Mustache template is not rendered by browser -->
     <!-- It is a pattern upon which we will superimpose the JSON data we get back from the AJAX call -->
     <template id="tmpResults">
-    
+      {% raw %}
       {{#children}}  <!-- start looping through the array called children in the result JSON data -->
       
       <div> <!-- added a div so each image appears on its own line -->
@@ -61,6 +61,7 @@ Here is the complete example we coded during the session.
       
       </div>
       {{/children}}  <!-- loop ends -->
+      {% endraw %}
     </template>
     
     
