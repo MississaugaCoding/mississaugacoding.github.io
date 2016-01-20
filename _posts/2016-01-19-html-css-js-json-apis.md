@@ -15,7 +15,6 @@ Here is the complete example we coded during the session.
 ###index.html
 {% highlight html %}
 <!doctype html>
-<!doctype html>
 <html>
 
 <head>
@@ -87,8 +86,8 @@ Here is the complete example we coded during the session.
 {% highlight javascript %}
 /*
 JSON API Example: Reddit
-documentation: https://www.reddit.com/dev/api 
-example call: https://www.reddit.com/r/cats/top.json
+API documentation: https://www.reddit.com/dev/api 
+Example call: https://www.reddit.com/r/cats/top.json
 */
 
 $(document).ready(function() {
