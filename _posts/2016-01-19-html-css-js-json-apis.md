@@ -111,7 +111,7 @@ $(document).ready(function() {
 ###style.css
 {% highlight css %}
 img {
-    width:350px; /* the images from the Reddit JSON API call vary in size; this way we get a more uniform display by forcing a width */
+    width:350px; /* the images from the Reddit JSON API call vary in size; this way we get a more uniform display by forcing an image width */
 }
 
 p {
