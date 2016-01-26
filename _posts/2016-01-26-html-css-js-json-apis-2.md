@@ -5,7 +5,7 @@ comments: true
 publish: true
 ---
 
-In the previous session we built a web page based on one of the numerous JSON APIs freely available on the Internet. In this session we look at another, sligtly more involved, example. 
+In the previous session we built a web page based on one of the numerous JSON APIs freely available on the Internet. In this session we look at another, slightly more involved, example. 
 
 While the vast majority of JSON APIs are free to use, some of them do require that you register beforehand, and that your AJAX calls to the service include your own unique API key, which is given to you upon registration. This is the case with the APIs demonstrated in this session.
 
