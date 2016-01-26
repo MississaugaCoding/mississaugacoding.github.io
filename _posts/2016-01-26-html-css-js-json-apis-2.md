@@ -15,9 +15,9 @@ Full sample code of what we built during the session will be posted here later.
 
 Example JSON API calls:
 
-- [Google Geocoding JSON API](https://maps.googleapis.com/maps/api/geocode/json?address=mississauga&key=AIzaSyA_M7VnGki-4-0YfjMT18ZTJDGxbi2QMY)
+- [Google Geocoding JSON API](https://maps.googleapis.com/maps/api/geocode/json?address=mississauga&key=AIzaSyA_M7VnGki-4-0YfjMT18ZTJDGxbi2QMYQ)
 
-- [World Weather JSON API](https://api.worldweatheronline.com/free/v2/weather.ashx?q=43,-79&format=json&key=ec746df3a2e403fd5ec97aeddfce)
+- [World Weather JSON API](https://api.worldweatheronline.com/free/v2/weather.ashx?q=43,-79&format=json&key=ec746df3a2e403fd5ec97aeddfcec)
 
 
 ##References &amp; Resources
