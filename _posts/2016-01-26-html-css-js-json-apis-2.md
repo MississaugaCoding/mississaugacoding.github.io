@@ -9,7 +9,7 @@ In the previous session we built a web page based on one of the numerous JSON AP
 
 While the vast majority of JSON APIs are free to use, some of them do require that you register beforehand, and that your AJAX calls to the service include your own unique API key, which is given to you upon registration. This is the case with the APIs demonstrated in this session.
 
-Another aspect we'll look at in this session is sending data to the API. As mentioned some weeks ago, AJAX calls - `$.get()` and `$.post()` - can send as well as receive data. For example, we would need to send the API key for those APIs that require it. Or, say if we're making an AJAX call to get the latitude and longitude of a specific place, for example, we need to send the name of the location.
+Another aspect we'll look at in this session is sending data to the API. As mentioned some weeks ago, the jQuery AJAX methods - `$.get()` and `$.post()` - can send as well as receive data. For example, we would need to send the API key for those APIs that require it. Or, say if we're making an AJAX call to get the co-ordinates of a specific place, we would need to send the name of the location.
 
 Full sample code of what we built during the session will be posted here later.
 
