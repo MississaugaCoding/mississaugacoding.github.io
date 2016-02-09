@@ -2,7 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+#relative_permalinks: true as per feb09/2016 email from github
 
 # Setup
 title:               Mississauga Coding
