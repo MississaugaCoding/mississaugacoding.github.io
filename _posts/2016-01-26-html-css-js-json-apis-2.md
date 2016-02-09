@@ -177,4 +177,7 @@ $(document).ready(function() {
 - [Google Geocoding JSON API Docs](https://developers.google.com/maps/documentation/geocoding/intro)
 - [Google Maps Example](http://www.w3schools.com/googleapi/google_maps_basic.asp)
 - [World Weather JSON API Docs](https://developer.worldweatheronline.com/page/explorer-free)
+<br/>
+- [Google Geocoding JSON API call example](https://maps.googleapis.com/maps/api/geocode/json?address=mississauga&key=AIzaSyA_M7VnGki-4-0YfjMT18ZTJDGxbi2QMYQ)
+- [World Weather JSON API call example](https://api.worldweatheronline.com/free/v2/weather.ashx?q=43,-79&format=json&key=ec746df3a2e403fd5ec97aeddfcec)
 
