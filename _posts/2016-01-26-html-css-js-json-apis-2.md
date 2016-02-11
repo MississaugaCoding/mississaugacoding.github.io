@@ -14,7 +14,7 @@ Another aspect we'll look at in this session is sending data to the API. As ment
 Here is the full code for the example we were working on. Any questions, please feel free to use the discussion area just below this post.
 
 
-###index.html
+### index.html
 {% highlight html %}
 <!doctype html>
 <html>
@@ -88,7 +88,7 @@ Here is the full code for the example we were working on. Any questions, please 
 {% endhighlight %}
 
 
-###script.js
+### script.js
 {% highlight javascript %}
 $(document).ready(function() {
 
@@ -149,7 +149,7 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-###style.css
+### style.css
 {% highlight css %}
 #divMap {
     width: 600px;
@@ -172,7 +172,7 @@ $(document).ready(function() {
 }
 {% endhighlight %}
 
-##References &amp; Resources
+## References &amp; Resources
 
 - [Google Geocoding JSON API Docs](https://developers.google.com/maps/documentation/geocoding/intro)
 - [Google Maps Example](http://www.w3schools.com/googleapi/google_maps_basic.asp)
