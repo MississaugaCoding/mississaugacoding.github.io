@@ -10,7 +10,9 @@ tagline:             'A meetup group'
 description:         'The official website for the meetup group Mississauga Coding.'
 url:                 http://www.meetup.com/Mississauga-Coding-learn-to-code/
 baseurl:             ''
+gems:                [jekyll-paginate]
 paginate:            5
+
 
 # About/contact
 author:
