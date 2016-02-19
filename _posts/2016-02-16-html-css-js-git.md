@@ -51,7 +51,7 @@ Once you register on GitHub, you get an unlimited number of public repositories.
 4. `git push -u origin master` to push changes upstream to rempte repo (origin) from local (master); will prompt for GitHub username and password
 
 
-To summarise, once local and remote repositories are set up, the only three `git` commands you will really use most of the time are:
+To summarise, once local and remote repositories are set up, the only three commands you will really use most of the time are:
 
 `git add --all`
 
