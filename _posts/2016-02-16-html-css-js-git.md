@@ -47,10 +47,12 @@ Sometimes, however, we need to go a step further and store our files in a remote
 
 Once you register on GitHub, you get an unlimited number of public repositories. 'Public' means anyone can see your files and copy them, but no one can change them directly.
 
+The steps to set up, and use, a remote repo on GitHub are:
+
 1. create repo on GitHub
 2. copy the repo URL, normally HTTPS
 3. `git remote add [name e.g. origin] [paste repo URL from GitHub]` done only once to let local Git installation know about remote repository
-4. `git push -u origin master` to push changes upstream to rempte repo (origin) from local (master); will prompt for GitHub username and password
+4. `git push -u origin master` to push changes upstream to remote repo (origin) from local branch (master); will prompt for GitHub username and password
 
 
 To summarise, once local and remote repositories are set up, the only three commands you will really use most of the time are:
