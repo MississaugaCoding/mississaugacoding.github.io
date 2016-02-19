@@ -13,21 +13,27 @@ If for some reason you are unabe to download and install Git on your PC or lapto
 ### Starting with a local repository
 
 `git init` 
-- starting with a local repository; done only once, at the beginning
+
+- done only once per project, from the root folder of the project
 
 `git add --all`
+
 - adds tracking for all files changes, i.e. adding new files as well removing exisiting ones
  
 `git commit -m "some descriptive comment"`
+
 - commits (to the repo) any changes made to the files being tracked
 
 `git status`
+
 - shows current status; especially useful to see if any changes have been made but have not yet been committed
 
 `git log`
+
 - shows a history of all commits; note each commit has a unique id. (SHA)
 
 `git checkout` 
+
 - recover a previous version of a file from the repo; e.g. deleted a file by mistake / deleted contents of file / made incorrect modifications
 - use `git log` to figure out which commit (date, time) you wish to go back to; note SHA
 - `git checkout [SHA] [filename]` gets an earlier committed version of that file
@@ -46,11 +52,15 @@ Once you register on GitHub, you get an unlimited number of public repositories.
 
 
 To summarise, once local and remote repositories are set up, the only three `git` commands you will really use most of the time are:
+
 `git add --all`
+
 `git commit -m "some descriptive comment"`
+
 `git push -u origin master`
 
-
+<br/>
+<br/>
 
 ## References &amp; Resources
 
