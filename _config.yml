@@ -2,7 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-#relative_permalinks: true as per feb09/2016 email from github
+#relative_permalinks: true as per Feb09/2016 email from github
 
 # Setup
 title:               Mississauga Coding
@@ -27,3 +27,6 @@ github:
 
 # Custom vars
 version:             1.0.0
+
+# added Apr10/2016 to allow future dated posts to show up (or not, if false)
+future:              false
