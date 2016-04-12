@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NodeJS - Back-end Set-up & Basics"
+title: "Intro to Back-end Development with NodeJS"
 comments: true
 publish: true
 ---
