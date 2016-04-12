@@ -26,7 +26,7 @@ function onRequest( request, response ) {
     response.end();
 }
 
-var server = http.createServer(onRequest);
+var server = http.createServer(onRequest); 
 server.listen(process.env.PORT || 3000);
 {% endhighlight %}
 
