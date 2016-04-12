@@ -2,7 +2,7 @@
 layout: post
 title: "Intro to Back-end Development with NodeJS"
 comments: true
-publish: false
+publish: true
 ---
 
 ### Installing NodeJS
