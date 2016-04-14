@@ -11,6 +11,6 @@ Mississauga Coding started as a meetup group around summer 2014, and from day on
 
 The key emphasis is on web development using open-source technologies, and currently we are the only such group in Mississauga that caters for beginners, tackling topics hands-on and from first principles. 
 
-Aside from this meetup page, we invite you to check out our [blog site](http://mississaugacoding.github.io) where you can find notes and code examples from previous sessions. 
+We invite you to check out the [posts archive](http://mississaugacoding.github.io/archive/) on this site where you can find notes and code examples from previous sessions. 
 
 We look forward to meeting up with you soon.
