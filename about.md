@@ -3,15 +3,14 @@ layout: page
 title: About
 ---
 
-This group is for anyone interested in programming with the focus of learning the fundamentals and developing the necessary skills to become competent enough. All coders from different programming languages and different skill levels are welcomed.
+Mississauga Coding is a knowledge-sharing community. It is aimed at anyone interested in coding, whether considering a career move, looking to build more skills or just for the sheer creative fun of learning to code.  
 
-In Summer 2014, some people began to show up to the weekly sessions to learn and share knowledge. Few sessions later, some of us noticed the potential of this group and decided to devote our time and efforts to set a friendly environment for both existing and future members.
+Coders, and aspiring coders, from different backgrounds and skill levels are welcome.  We focus on understanding fundamentals first, and building up from there.  
 
-Later onn, we have covered topics such as web development, regular expressions as well as data mining. This summer we are setting a new agenda for our members and are coming back stronger than ever.
+Mississauga Coding started as a meetup group around summer 2014, and from day one the main objective has been for members helping each other freely to learn about programming.  
 
-You will be hearing from us soon!
+The key emphasis is on web development using open-source technologies, and currently we are the only such group in Mississauga that caters for beginners, tackling topics hands-on and from first principles. 
 
-Let's make this our very own Mississauga coding network.
+Aside from this meetup page, we invite you to check out our [blog site](http://mississaugacoding.github.io) where you can find notes and code examples from previous sessions. 
 
-Note: If you are already familiar with Github, email us to be part of our new open-sourced organization at [our Github page.](https://github.com/MississaugaCoding)
-
+We look forward to meeting up with you soon.
