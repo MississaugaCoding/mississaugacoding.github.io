@@ -70,12 +70,11 @@ primary key (`id`)
 
 ### To insert records:
 {% highlight sql %}
-insert into `category` (`name`) values ('Groceries');
+insert into `category` set `name`='Groceries';
 
-insert into `category` (`name`) values ('Rent');
+insert into `category` set `name`='Rent';
 
-insert into `category` (`name`,`description`) 
-    values ('Transport','trains, planes, buses');
+insert into `category` set `name`='Transport', `description`='trains, planes, buses';
     
 insert into `category` (`name`) values ('whatever');
 {% endhighlight %}
