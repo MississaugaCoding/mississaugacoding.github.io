@@ -16,11 +16,11 @@ While Oracle so far still maintains a freely available version of MySQL, some ne
 
 ## Some RDBMS Terms
 
-In relational database terminology, tables are sometimes referred to as relations, columns or fields as attributes and rows or records as tuples.
+In relational database terminology, tables are sometimes referred to as relations, columns (or fields) as attributes and rows (or records) as tuples.
 
 Each table typically maps to one discrete entity within the system, while each table row is identified uniquely by some sort of id field. Tables can be related via foreign keys, hence relational.
 
-Relational database design is a specialisation within IT and involves an analytical exercise called normalisation.
+Relational database design is a specialisation within IT and often involves an analytical process referred to as normalisation.
 
 
 ## Installation & Set-up
