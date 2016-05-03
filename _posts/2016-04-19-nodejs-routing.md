@@ -13,11 +13,11 @@ Routing is a mechanism by which information passed in with the client request is
 
 This information is passed in with the request, for example, as a pathname like in:
 
-`http://server-url:8081/clients    // all clients` 
+`http://server-url:8081/clients` 
 
 and/or as parameters in the query string, such as:
 
-`http://server-url:8081/client?id=123    // particular client`
+`http://server-url:8081/client?id=123`
 
 Routing enables our one server program to handle several different types of requests, and to serve the appropriate response for each request accordingly.
 
