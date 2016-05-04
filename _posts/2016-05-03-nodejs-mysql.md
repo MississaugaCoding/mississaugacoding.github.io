@@ -2,7 +2,7 @@
 layout: post
 title: "NodeJS & Databases: MySQL"
 comments: true
-publish: false
+publish: true
 ---
 
 Databases are an essential component of back-end architecture. NodeJS, which enables us to run JavaScript code on the server side, can connect to several of the major database server engines, including the very popular MySQL.
