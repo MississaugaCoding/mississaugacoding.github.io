@@ -149,8 +149,7 @@ $.get('http://server-url:8081/client?id=1', function(resp){
 {% endhighlight %}
             
 
-Here is a link to the full example code on [GitHub](https://github.com/lcarbonaro/nodejs/tree/master/session23)
-
+Here is a link to the full example code on [GitHub](https://github.com/lcarbonaro/nodejs/tree/master/session24)
 
 ## References &amp; Resources
 
