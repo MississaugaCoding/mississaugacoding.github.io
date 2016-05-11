@@ -170,7 +170,146 @@ group by c.id;
 {% endhighlight %}
 
 
+## Running SQL commands from NodeJS back-end server
+
+Next we shall be using these SQL commands from inside our NodeJS server. 
+
+### Install the MySQL NodeJS module
+
+Unlike the `http` and `url` core modules we have used before, the `mysql` module that we will need to run these commands is not built-in. So we need to install it first. To do this, at the server code folder type in: `npm install mysql` 
+
+Then, in our server.js code, we can then ask for this module by adding:  `var mysql = require('mysql');`
+
+### Establish a connection
+
+{% highlight javascript %}
+
+...
+
+var dbHost = process.env.IP || 'localhost',
+    dbUser = process.env.C9_USER || 'root';
+
+var connection = mysql.createConnection({
+    host     : dbHost,
+    user     : dbUser,
+    password : '',
+    database : 'c9'   // change if not on Cloud9
+});
+
+...
+
+{% endhighlight %}
+
+
+Note that the password and database name, and possibly even user, will be different if you're working off a local installation of MySQL i.e. on your computer, as opposed to on Cloud9.
+
+
+### Code a route to get a list of categories
+
+{% highlight javascript %}
+
+...
+
+var sql;
+    
+switch (route) {
+    
+    case '/categories':
+        sql = 'select `id`,`name` from `category`';
+        connection.query(sql, function(err, rows) {
+            if (err) {
+                console.error('categories sql error: ' + err.stack);
+            } else {
+                res.write(JSON.stringify(rows));
+                res.end();
+            }
+        });
+        break;
+
+...
+
+{% endhighlight %}
+
+
+
+### Code a route to get a summary of expenses
+
+{% highlight javascript %}
+
+...
+
+case '/summary':
+    sql = 'select c.name, sum(e.amount) as `total` from `category` c left outer join `expense` e on c.id = e.categoryId group by c.id';
+    connection.query(sql, function(err, rows) {
+        if (err) {
+            console.error('summary sql error: ' + err.stack);
+        } else {
+            res.write(JSON.stringify(rows));
+            res.end();
+        }
+    });
+    break;
+
+...
+
+{% endhighlight %}
+
+
+
+### Code a route to insert an expense record
+
+{% highlight javascript %}
+
+...
+
+case '/expense':
+    var parms = url.parse(req.url,true).query,
+        setFlds = {
+            date: new Date(),
+            amount: parms.amount,
+            categoryId: parms.category
+        };
+            
+        sql = 'insert into `expense` set ?';
+            
+        connection.query(sql, [setFlds], function(err, result) {
+            if (err) {
+                console.error('expense sql error: ' + err.stack);
+            } else {
+                res.write( JSON.stringify(result) );
+                res.end();
+            }
+        });
+            
+        break;
+
+...
+
+{% endhighlight %}
+
+
+### Test server.js
+
+To try out these back-end server end-points, make sure to first start your database server, and then start your NodeJS server itself.
+
+After we test these three end-points, we're done with our back-end changes, and we can next move on to coding the front-end of our little application.
+
+
+## Coding the front-end
+
+The requirements for this front-end are very simple. 
+
+  -  We will have a drop-down (select) listing all the categories. 
+  
+  -  We will have an input box to enter the expense amount, and a save button. 
+  
+  -  We will have a button to display an expense summary for each category.
+
+
+Here is a link to the full example code (back-end and front-end) on [GitHub](https://github.com/lcarbonaro/nodejs/tree/master/session26)
+
 ## References &amp; Resources
 
 - [MySQL](http://mysql.com/)
 - [MariaDB](https://mariadb.org/)
+- [MySQL npm module docs](https://www.npmjs.com/package/mysql)
