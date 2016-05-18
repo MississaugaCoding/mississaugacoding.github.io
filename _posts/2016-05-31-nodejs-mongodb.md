@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "NodeJS & Databases: MySQL"
+title: "NodeJS & Databases: MongoDB"
 comments: true
 publish: true
 ---
 
-Databases are an essential component of back-end architecture. NodeJS, which enables us to run JavaScript code on the server side, can connect to several of the major database server engines, including the very popular MySQL.
+Databases are an essential component of back-end architecture. NodeJS, which enables us to run JavaScript code on the server side, can connect to several of the major database server engines, including the relatively recent, but increasingly popular, MongoDB.
 
 ## Background
 
@@ -29,19 +29,12 @@ For local installation, the MySQL database server can be downloded from the site
 
 For Cloud9 users, MySQL comes with the workspace, so there's nothing to download.
 
-## MySQL Command Line
+## MongoDB Shell Command Line
 
 Cloud9 users can get at a MySQL command line prompt by opening a terminal window and typing in `mysql-ctl cli`.
 
 If you have installed MySQL locally, from a command window at the installed mysql/bin folder, type in `mysqld` to start the database server. Do not close this window. Open another command window and, at the installed mysql/bin folder, type in `mysql` to get a MySQL prompt. Note that this may vary based on your local installation.
 
-## Using phpmyadmin	
-
-phpmyadmin is a browser-based interface and can be used instead of the MySQL command line.
-
-Cloud9 users can access phpmyadmin by opening a terminal window and typing in `phpmyadmin-ctl install`. Then open the link displayed, in a separate browser tab.
-
-If you have installed MySQL locally, depending on what you installed, you may have access to phpmyadmin, workbench, or other tools.
 
 
 ## Some example commands:
@@ -54,7 +47,7 @@ Cloud9:  `use c9;`
 
 Local: `create database test;` then `use test;`
 
-### To create a table:
+### To create a collection:
 {% highlight sql %}
 create table `category` (
 `id` int auto_increment,
@@ -68,7 +61,7 @@ primary key (`id`)
 -- as field names or table names
 {% endhighlight %}
 
-### To insert records:
+### To insert documents:
 {% highlight sql %}
 insert into `category` set `name`='Groceries';
 
@@ -79,7 +72,7 @@ insert into `category` set `name`='Transport', `description`='trains, planes, bu
 insert into `category` (`name`) values ('whatever');
 {% endhighlight %}
 
-### To retrieve records:
+### To retrieve documents:
 {% highlight sql %}
 select * from `category`;
 
@@ -89,7 +82,7 @@ select `name` from `category`;
 {% endhighlight %}
 
 
-### To update records:
+### To update documents:
 {% highlight sql %}
 update `category` set `description`='public transit' 
     where `id`=3;
@@ -97,7 +90,7 @@ update `category` set `description`='public transit'
 update `category` c set `description` = c.name;
 {% endhighlight %}
 
-### To delete records:
+### To delete documents:
 {% highlight sql %}
 delete from `category` where `id` = 4;
 
@@ -105,76 +98,13 @@ delete from `category` where `id` = 4;
 delete from `category`;
 {% endhighlight %}
 
-### Some other useful commands:
-{% highlight sql %}
-show create table `category`;
-{% endhighlight %}
-
-{% highlight sql %}
--- note truncate vs. delete
-truncate table `category`; 
-{% endhighlight %}
-
-### Foreign keys and selects across tables
-{% highlight sql %}
--- let's create another table
-create table `expense` (
-`id` int auto_increment comment 'auto generated expense id',
-`date` date,
-`amount` decimal(6,2),
-`details` varchar(50),
-`categoryId` int comment 'foreign key to category table',
-primary key (`id`)
-) comment = 'expense records';
-{% endhighlight %}
-
-{% highlight sql %}
--- add some records to the expense table
-insert into `expense` (`date`,`categoryId`,`amount`) 
-    values('2016-05-01',2,1234);
-
--- can insert more than one record at a time
-insert into `expense` (`date`,`categoryId`,`amount`)
-    values ( curdate(),1,12.34 ), 
-           ( curdate(),1,20 ), 
-           ( curdate(),3,60 );
-
--- curdate() is built-in MySQL function
--- that returns the current date
-{% endhighlight %}
-
-{% highlight sql %}
-select * from `expense`;
-{% endhighlight %}
-
-{% highlight sql %}
--- look-up category id. to show name
-select e.*, c.name 
-from `expense` e, `category` c 
-where e.categoryId = c.id;
-{% endhighlight %}
-
-{% highlight sql %}
--- above can be done as inner join
-select e.*, c.name 
-from `expense` e
-inner join `category` c on e.categoryId = c.id;
-{% endhighlight %}
-
-{% highlight sql %}
--- aggregation
-select c.name, sum(e.amount) as `total`
-from `category` c
-left outer join `expense` e on c.id = e.categoryId
-group by c.id;
-{% endhighlight %}
 
 
-## Running SQL commands from NodeJS back-end server
+## Running MongoDB commands from NodeJS back-end server
 
 Next we shall be using these SQL commands from inside our NodeJS server. 
 
-### Install the MySQL NodeJS module
+### Install the MongoDB NodeJS module
 
 Unlike the `http` and `url` core modules we have used before, the `mysql` module that we will need to run these commands is not built-in. So we need to install it first. To do this, at the server code folder type in: `npm install mysql` 
 
@@ -297,19 +227,13 @@ After we test these three end-points, we're done with our back-end changes, and 
 
 ## Coding the front-end
 
-The requirements for this front-end are very simple. 
-
-  -  We will have a drop-down (select) listing all the categories. 
-  
-  -  We will have an input box to enter the expense amount, and a save button. 
-  
-  -  We will have a button to display an expense summary for each category.
-
+The requirements for this example front-end are exactly the same as the one we did for MySQL. In fact the same front-end code (HTML/CSS/JS) should run with little or no modification. This is an example of how the front-end part of an application is agnostic (does not know and does not need to know) about what technologies are being used in the back-end.
 
 Here is a link to the full example code (back-end and front-end) on [GitHub](https://github.com/lcarbonaro/nodejs/tree/master/session27)
 
 ## References &amp; Resources
 
-- [MySQL](http://mysql.com/)
-- [MariaDB](https://mariadb.org/)
-- [MySQL npm module docs](https://www.npmjs.com/package/mysql)
+- [MongoDB Wikipedia entry](https://en.wikipedia.org/wiki/MongoDB)
+- [MongoDB](https://docs.mongodb.com/manual/)
+- [MongoDB for NodeJs (npm module docs](https://www.npmjs.com/package/mongodb)
+- [MongoDB tutorial](http://www.tutorialspoint.com/mongodb/index.htm)
