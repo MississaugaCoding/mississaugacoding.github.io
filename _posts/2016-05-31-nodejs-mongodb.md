@@ -200,7 +200,7 @@ In the [MongoDB manual](https://docs.mongodb.com/manual/reference/method/db.coll
 
 This covers the basics of the basic CRUD operations in MongoDB. 
 
-Next we'll talk about aggregation operations.
+This [github repo](https://github.com/lcarbonaro/nodejs/tree/master/session32) gives a simple example of how to use MongoDB from within a NodeJS application.
 
 
 
