@@ -209,7 +209,7 @@ This [github repo](https://github.com/lcarbonaro/nodejs/tree/master/session32) g
 - [More on NoSQL](https://www.mongodb.com/nosql-explained)
 - [MongoDB Wikipedia entry](https://en.wikipedia.org/wiki/MongoDB)
 - [MongoDB official docs](https://docs.mongodb.com/manual/)
-- [MongoDB for NodeJs (npm module docs)](https://www.npmjs.com/package/mongodb)
+- [MongoDB for NodeJS (npm module docs)](https://www.npmjs.com/package/mongodb)
 - [MongoDB tutorial](http://www.tutorialspoint.com/mongodb/index.htm)
 - [MongoDB University (free online courses)](https://university.mongodb.com/)
 - [Github Repo](https://github.com/lcarbonaro/nodejs/tree/master/session29)
