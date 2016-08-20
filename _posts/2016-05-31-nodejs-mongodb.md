@@ -91,11 +91,11 @@ Remember that a collection is like a table in the SQL world. Notice also that we
 
 ### To insert documents:
 
-To insert documents into a collection, use the `insert` method on the collection name, for example:
+To insert documents into a collection, use the `insertOne` and `insertMany` methods on the collection name, for example:
 
 `db.category.insert({"name":"Groceries"})`
 
-`db.category.insert( [ {"name":"Rent"} , "name":"Medical" } ] )`
+`db.category.insert( [ {"name":"Rent"} , {"name":"Medical"} ] )`
 
 Notice the JSON format of the arguments to the `insert` method.
 
