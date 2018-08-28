@@ -5,8 +5,8 @@ comments: false
 publish: true
 ---
 
-[Mississauga Coding](http://www.meetup.com/Mississauga-Coding-learn-to-code/) is the first and only organization of its kind in Mississauga to bring people interested in coding together and to approach various popular technologies through its live sessions and online collaboration tools such as Github and Trello.
+[Mississauga Coding](http://www.meetup.com/Mississauga-Coding-learn-to-code/) is the first and only coding meetup in Mississauga to bring together people interested in learning to code. Our main focus is on freely available, open-sourced web technologies.
 
-It welcomes people of all ages to benefit from the resources provided and meet other attendees if all levels. 
+Our meetup group welcomes people of all ages, backgrounds and skill levels to benefit from the resources provided and to meet other like-minded attendees for the purpose of learning together. 
 
-Head over our Meetup page to know when and where sessions would be held. 
+Head over our Meetup page to know when and where sessions are being held. 
