@@ -9,7 +9,7 @@ As we continue covering the basic concepts of front-end web development, the mai
 
 This is where we left off our HTML and CSS files, more or less:
 
-###index.html
+### index.html
 {% highlight html %}
 <!doctype html>
 <html>
@@ -41,7 +41,7 @@ This is where we left off our HTML and CSS files, more or less:
 </html>
 {% endhighlight %}
 
-###style.css
+### style.css
 {% highlight css %}
 p {
     color: blue;
@@ -71,7 +71,7 @@ The _class_ attribute is very similar but for a group of HTML elements.
 The _id_ and _class_ attributes are useful because they allow us to refer to specific HTML element or element(s) from our CSS and from our JavaScript.
  
 
-###So, finally, let's talk some JavaScript
+### So, finally, let's talk some JavaScript
 
 As we did in the case of CSS, we need to let our HTML document know about our JavaScript code.
 
@@ -190,7 +190,7 @@ Suggested steps:
 
 Sample solution:
 
-###index.html
+### index.html
 {% highlight html %}
 <!doctype html>
 <html>
@@ -224,7 +224,7 @@ Sample solution:
 </html>
 {% endhighlight %}
 
-###script.js
+### script.js
 {% highlight javascript %}
 // get button element 
 var btn = document.getElementById('btnColour');
@@ -248,6 +248,6 @@ function applyColour() {
 
 No changes to style.css were required at all.
 
-###Additional Resource Links
-- [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)
+### Additional Resource Links
 - [Mozilla JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/)

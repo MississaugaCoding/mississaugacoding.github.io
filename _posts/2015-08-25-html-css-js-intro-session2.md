@@ -11,7 +11,7 @@ We will introduce new HTML tags and CSS properties, before touching on some Java
 
 This is where we left off our HTML and CSS files:
 
-###index.html
+### index.html
 {% highlight html %}
 <!doctype html>
 <html>
@@ -33,14 +33,14 @@ This is where we left off our HTML and CSS files:
 </html>
 {% endhighlight %}
 
-###style.css
+### style.css
 {% highlight css %}
 p {
     color: blue; /* or whichever colour you chose */
 }
 {% endhighlight %}
 
-###Some more CSS properties
+### Some more CSS properties
 
 Here are some more CSS properties we can use to further style our solitary paragraph.
 
@@ -53,7 +53,7 @@ border
 padding
 {% endhighlight %}
 
-###Two more HTML elements: Drop-downs & Buttons
+### Two more HTML elements: Drop-downs & Buttons
 
 Drop-downs, also known as combo-boxes or select boxes, give the user a predefined set of choices.
 

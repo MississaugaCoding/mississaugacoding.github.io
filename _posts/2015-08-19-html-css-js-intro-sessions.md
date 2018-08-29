@@ -9,7 +9,7 @@ This post includes notes from the introductory sessions, as well as some resourc
 
 Members will also be able to post their questions or comments.
 
-###What is HTML?
+### What is HTML?
 - Hyper Text Mark-up Language
 - currently the standard is at version 5
 - gives the web page its underlying structure
@@ -18,14 +18,14 @@ Members will also be able to post their questions or comments.
 - **structure**
 
 
-###What is CSS?
+### What is CSS?
 - Cascading Style Sheets
 - currently the standard is at version 3
-- allows us to style the elements on the web page, e.g. size, colour, font etc.
+- allows us to style the elements on the web page, e.g. size, colour, font, layout etc.
 - **style**
 
 
-###What is Javascript?
+### What is Javascript?
 - a programming language (unlike HTML and CSS)
 - currently the standard is at version 5
 - allows us to add interactivity to the web page, e.g.
@@ -36,7 +36,7 @@ Members will also be able to post their questions or comments.
 - **interactivity**
 
 
-###A bit more about HTML 
+### A bit more about HTML 
 - generic tag syntax:
 {% highlight html %}
 <tagname attribute1="attribute1-value" ... > text </tagname>
@@ -80,7 +80,7 @@ Note:
   - ditto for comments; be aware of "View source" 
 
 
-###A bit more about CSS
+### A bit more about CSS
 - basic selector syntax:
 {% highlight css %}
 selector {
@@ -105,7 +105,7 @@ p {
 }
 {% endhighlight %}
 
-####Some Resource Links
+#### Some Resource Links
+- [Mozilla HTML Introduction](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction)
 - [W3Schools HTML](http://www.w3schools.com/html/)
 - [W3Schools CSS](http://www.w3schools.com/css/)
-- [Mozilla HTML Introduction](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction)
