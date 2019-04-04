@@ -7,7 +7,7 @@ publish: true
 
 Git is a source code management tool used to keep track of changes to files in a project. Git is freely available as a download for Windows, Mac and Linux operating systems. Once installed, the `git` commands used are identical across all three platforms.
 
-If for some reason you are unabe to download and install Git on your PC or laptop (for example, it's a work laptop), you can use an online IDE which has Git support built-in, such as Cloud9. Again, the `git` commands we will discuss here will be indentical.
+If for some reason you are unabe to download and install Git on your PC or laptop (for example, it's a work laptop), you can use an online IDE which has Git support built-in, such as Cloud9. Again, the `git` commands we will discuss here will be identical.
 
 
 ### Starting with a local repository
@@ -18,7 +18,7 @@ If for some reason you are unabe to download and install Git on your PC or lapto
 
 `git add --all`
 
-- adds tracking for all files changes, i.e. adding new files as well removing exisiting ones
+- adds tracking for all files changes, i.e. adding new files as well as removing exisiting ones
  
 `git commit -m "some descriptive comment"`
 
