@@ -43,7 +43,7 @@ If for some reason you are unabe to download and install Git on your PC or lapto
 
 We can just have a local repository and be able to keep track of all changes there, and leave it at that. 
 
-Sometimes, however, we need to go a step further and store our files in a remote repository. For example, for extra backup in case something happens to your laptop, or as a way to publicly showcase a project and make the code available to others. This is where something like GitHub comes in. 
+Sometimes, however, we need to go a step further and store our files in a remote repository. For example, for extra backup in case something happens to your laptop, or as a way to publicly showcase a project and make the code available to others for collaboration. This is where something like GitHub comes in. 
 
 Once you register on GitHub, you get an unlimited number of public repositories. 'Public' means anyone can see your files and copy them, but no one can change them directly.
 
