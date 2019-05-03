@@ -69,7 +69,7 @@ To summarise, once local and remote repositories are set up, the only three comm
 ## References &amp; Resources
 
 - [Git Download & Docs](https://git-scm.com/)
-- [Github](http://github.com)
+- [GitHub](http://github.com)
 - [Cloud9](http://c9.io)
 - [Bitbucket](https://bitbucket.org)
 
